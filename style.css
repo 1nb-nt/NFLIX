@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #000;
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+}
+.navbar img {
+  width: 150px;
+  margin-right: auto;
+}
+.navbar span {
+  margin-left: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.navbar span:hover {
+  color: #e50914;
+}
+
+.banner-wrapper {
+  position: relative;
+  max-width: 1400px;
+  margin: auto;
+  overflow: hidden;
+}
+.banner {
+  width: 100%;
+  display: block;
+}
+.banner-text {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+  z-index: 2;
+  max-width: 50%;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+}
+.banner-text h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.banner-text p,
+.banner-text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.press {
+  background: #e50914;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+
+.model {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.model-content {
+  background-color: #181818;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #333;
+  width: 300px;
+  text-align: center;
+}
+.model-content input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  background: #333;
+  border: none;
+  color: #fff;
+}
+.model-content button {
+  background: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+.close {
+  float: right;
+  font-size: 28px;
+  color: #aaa;
+  cursor: pointer;
+}
+.close:hover {
+  color: #fff;
+}
+.g_id_signin {
+  margin-top: 15px;
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Netflix Clone</title>02
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="navbar">
+    <img src="n1.jpeg" alt="Netflix Logo" />
+    <span class="language">English</span>
+    <span id="signInBtn">Sign In</span>
+  </div>
+
+  <div class="banner-wrapper">
+    <img src="n2.jpg" alt="Netflix Banner" class="banner" />
+    <div class="banner-text">
+      <h1>Unlimited movies, TV shows, and more.</h1>
+      <p>Starts at ₹149. Cancel anytime.</p>
+      <h3>Ready to watch? Enter your email to create or restart your membership.</h3>
+      <button id="paymentBtn" class="press">Get Started →</button>
+    </div>
+  </div>
+
+ 
+<div id="signinmodel" class="model">
+  <div class="model-content">
+    <span class="close" onclick="closemodel('signinmodel')">&times;</span>
+    <h2>Sign In</h2>
+    <input id="signinEmail" type="email" placeholder="Email" required />
+    <input id="signinPassword" type="password" placeholder="Password" required />
+    <button onclick="submitSignIn()">Sign In</button>
+
+    <div id="g_id_onload"
+      data-client_id="934728309279-r57nm2e9ukr4ugr8j2g8gtuv4of6k9e6.apps.googleusercontent.com.apps.googleusercontent.com"
+      data-callback="handleGoogleSignIn"
+      data-auto_prompt="false">
+    </div>
+    <div class="g_id_signin" data-type="standard" data-size="large"></div>
+  </div>
+</div>
+
+<div id="paymentmodel" class="model">
+  <div class="model-content">
+    <span class="close" onclick="closemodel('paymentmodel')">&times;</span>
+    <h2>Pay via UPI</h2>
+    <input id="upiInput" type="text" placeholder="Enter UPI ID (e.g. name@bank)" required />
+    <button onclick="submitPayment()">Pay ₹149</button>
+  </div>
+</div>
+
+
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
